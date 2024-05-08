@@ -1,0 +1,20 @@
+conda config --add channels conda-forge
+conda create --name Cookiecutter cookiecutter=1.7.3
+
+conda activate Cookiecutter
+conda deactivate
+
+cookiecutter urlgithub --checkout rama
+#lo de la rama es por si no esta en main
+
+#esto ya genera una plantilla para que puedas crear proyectos rapido con cookiecutter
+
+-----
+
+#para crear la plantilla personalizada entonces se genera primero
+ conda activate Cookiecutter
+ cookiecutter .
+
+ #y con eso se ejecuta y sigue las normas
+
+ #en el json estan las asignaciones de las variables
